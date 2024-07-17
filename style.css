@@ -1,0 +1,154 @@
+
+  /* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, table, form, input, textarea {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header (navbar) styles */
+  header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  /* Work Section */
+  #work ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #work ul li {
+    margin-bottom: 10px;
+  }
+  
+  #work ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  #work ul li a:hover {
+    color: #555;
+  }
+  
+  /* Resume Section */
+  #resume table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #resume table th, #resume table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Contact Section */
+  #contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #contact label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #contact textarea {
+    height: 150px;
+  }
+  
+  #contact input[type="submit"] {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #fff;
+  }
+  
