@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #444;
+}
+
+header {
+    background-color: #00bfa5;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #004d40;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #00bfa5;
+    color: #fff;
+}
+
+.services, .statistics, .platforms, .testimonials {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.service-item, .stat-item, .platform-item, .testimonial-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #00bfa5;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
