@@ -1,0 +1,107 @@
+step 1:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Quiz: Test Your Knowledge</h2>
+    <form id="quiz-form">
+      <div class="question" id="question1">
+        <span class="question-text">Question 1: What is the capital of Italy?</span><br>
+        <input type="radio" name="q1" value="rome"> Rome<br>
+        <input type="radio" name="q1" value="paris"> Paris<br>
+        <input type="radio" name="q1" value="berlin"> Berlin<br>
+      </div>
+      <div class="question" id="question2">
+        <span class="question-text">Question 2: Who painted the Mona Lisa?</span><br>
+        <input type="radio" name="q2" value="leonardo"> Leonardo da Vinci<br>
+        <input type="radio" name="q2" value="picasso"> Pablo Picasso<br>
+        <input type="radio" name="q2" value="vangogh"> Vincent van Gogh<br>
+      </div>
+      <div class="question" id="question3">
+        <span class="question-text">Question 3: What is the largest ocean on Earth?</span><br>
+        <input type="radio" name="q3" value="pacific"> Pacific Ocean<br>
+        <input type="radio" name="q3" value="atlantic"> Atlantic Ocean<br>
+        <input type="radio" name="q3" value="indian"> Indian Ocean<br>
+      </div>
+      <button type="button" id="submit-btn">Submit Quiz</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+step 2:
+document.addEventListener("DOMContentLoaded", function() {
+    const submitBtn = document.getElementById('submit-btn');
+  
+    submitBtn.addEventListener('click', function() {
+      // Define questions and correct answers
+      const quizQuestions = [
+        { question: "What is the capital of Italy?", answers: ["rome", "paris", "berlin"], correctAnswer: "rome" },
+        { question: "Who painted the Mona Lisa?", answers: ["leonardo", "picasso", "vangogh"], correctAnswer: "leonardo" },
+        { question: "What is the largest ocean on Earth?", answers: ["pacific", "atlantic", "indian"], correctAnswer: "pacific" }
+      ];
+  
+      // Calculate score
+      let score = 0;
+  
+      quizQuestions.forEach((quizItem, index) => {
+        const selectedAnswer = document.querySelector(`input[name="q${index + 1}"]:checked`);
+        if (selectedAnswer && selectedAnswer.value === quizItem.correctAnswer) {
+          score++;
+        }
+      });
+  
+      // Display score as an alert
+      alert(`Your score is: ${score}/${quizQuestions.length}`);
+    });
+  });
+
+  step 3:
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .quiz-container {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .question-text {
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  button:hover {
+    background-color: #e9e9e9;
+  }
