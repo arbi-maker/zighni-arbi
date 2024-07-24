@@ -1,76 +1,68 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #444;
+/* .navbar-brand {
+  color: green !important;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: #00bfa5;
-    padding: 20px;
+i {
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: black;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.shopping-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 3%;
+  margin: 50px 0;
+}
+.total-price span {
+  font-size: 30px;
 }
 
-.logo img {
-    width: 150px;
+.total {
+  font-weight: bold;
+}
+.list-products {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 70%;
+}
+.card {
+  padding: 5%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+.quantity {
+  font-size: 25px;
 }
 
-.nav-links li {
-    margin-left: 20px;
+.card-body div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #004d40;
-}
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #00bfa5;
-    color: #fff;
-}
-
-.services, .statistics, .platforms, .testimonials {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.service-item, .stat-item, .platform-item, .testimonial-item {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #00bfa5;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+.fa-trash-alt {
+  color: #de6b5c;
 }
